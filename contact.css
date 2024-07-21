@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+}
+
+body {
+    background-image: url(./tm-astro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlink {
+    flex: 1;
+    text-align: right;
+}
+
+.navlink ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+
+.navlink ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navlink ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition-duration: 0.5s;
+}
+
+.navlink ul li:hover:after {
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+.contact {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.322);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    width: 40vw;
+    float: right;
+}
+
+.parentcontact {
+    display: flex;
+    border: 2px solid green;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    width: 97vw;
+}
+
+.el2a {
+    font-size: 25px;
+    color: white;
+}
+
+.el2b {
+    color: white;
+}
+
+.inputname, .msg, .buttonsub {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+}
+
+.inputname {
+    border-bottom-width: 3px;
+    border-radius: 30px;
+}
+
+.buttonsub {
+    width: auto;
+    cursor: pointer;
+    background-color: rgba(255, 192, 203, 0.205);
+    border: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.msg {
+    border-radius: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+    font-style: italic;
+}
+
+.formdiv {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}

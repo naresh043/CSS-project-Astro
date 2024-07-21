@@ -1,0 +1,402 @@
+/* Default styles */
+
+/* Add this to your chat.css */
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+}
+
+/* Common Styles */
+.page1div, .page2div, .page3div, .page4 {
+    background-image: url(./tm-astro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid red;
+}
+
+/* Page 1 */
+.page1div .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlink {
+    flex: 1;
+    text-align: right;
+}
+
+.navlink ul {
+    list-style: none;
+}
+
+.navlink ul li {
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+
+.navlink ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navlink ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition-duration: 0.5s;
+}
+
+.navlink ul li:hover::after {
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+.Welcome {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 10px;
+    transition: all 1s;
+    animation: Welcome 3s 1;
+}
+
+@keyframes Welcome {
+    from {
+        width: 0%;
+        background-color: white;
+    }
+    to {
+        width: 100%;
+        background-color: black;
+    }
+}
+
+.Welcome:hover {
+    box-shadow: 5px 5px 10px white;
+    transform: scale(1.1);
+}
+
+.imgdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.imga {
+    border-radius: 5px;
+    transition: all 1s;
+    animation: imga 3s 1;
+}
+
+@keyframes imga {
+    from {
+        width: 0%;
+        background-color: white;
+    }
+    to {
+        width: 100%;
+        background-color: black;
+    }
+}
+
+.imgdiv img:hover {
+    box-shadow: 5px 5px 10px white;
+    transform: scale(1.1);
+}
+
+.maindivhome {
+    display: flex;
+    gap: 10px;
+}
+
+.linediv {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    animation: linediv 3s 1;
+}
+
+@keyframes linediv {
+    from {
+        width: 0%;
+        background-color: black;
+    }
+    to {
+        width: 100%;
+        background-color: white;
+    }
+}
+
+.parentdiv {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+    height: 80vh;
+    justify-content: space-evenly;
+}
+
+/* Page 2 */
+.page2div .mparent {
+    display: flex;
+    justify-content: center;
+}
+
+.page2div .imgprent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.page2div .child2 {
+    width: 300px;
+    height: 300px;
+}
+
+.page2div .child2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.page2div .child2a {
+    animation: move 3s infinite;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2b {
+    animation: move 3s infinite;
+    animation-delay: 0.1s;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2c {
+    animation: move 3s infinite;
+    animation-delay: 0.2s;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2d {
+    animation: move 3s infinite;
+    animation-delay: 0.4s;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2e {
+    animation: move 3s infinite;
+    animation-delay: 0.5s;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2f {
+    animation: move 3s infinite;
+    animation-delay: 0.6s;
+    transition: all 0.3s ease;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Page 3 */
+.page3div .backgrounddiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    height: 90vh;
+    width: 95vw;
+    animation: animi 3s 1;
+    transition: all 3s;
+}
+
+.page3div .linepage3 {
+    width: 56%;
+    height: 4px;
+    background-color: white;
+    animation: animi 3s 1;
+    transition: all 3s;
+}
+
+@keyframes animi {
+    from {
+        opacity: 0.3;
+        transform: scale(3, 3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+.page3div .aboutdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.315);
+    border-radius: 5px;
+    color: white;
+    height: 50vh;
+    width: 50vw;
+    padding: 20px;
+}
+
+.page3div .aboutdiv:hover {
+    box-shadow: 3px 3px 10px white;
+}
+
+/* Page 4 */
+.page4 .contact {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.322);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    width: 40vw;
+    float: right;
+}
+
+.page4 .formpa {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 95vh;
+    width: 97vw;
+}
+
+.page4 .el2a {
+    font-size: 25px;
+    color: white;
+}
+
+.page4 .el2b {
+    color: white;
+}
+
+.page4 .inputname, 
+.page4 .msg, 
+.page4 .buttonsub {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+}
+
+.page4 .inputname {
+    border-bottom-width: 3px;
+    border-radius: 30px;
+}
+
+.page4 .buttonsub {
+    width: auto;
+    cursor: pointer;
+    background-color: rgba(255, 192, 203, 0.205);
+    border: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.page4 .msg {
+    border-radius: 10px;
+}
+
+.page4 input::placeholder, 
+.page4 textarea::placeholder {
+    color: white;
+    font-style: italic;
+}
+
+.page4 .formdiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.page4 .contact {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1024px) {
+  .navlink {
+    padding: 2% 3%; /* Adjust padding for smaller screens */
+  }
+}
+  .maindivhome {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .imgdiv {
+    flex-direction: row; /* Stack images horizontally */
+  }
+
+  .imga {
+    width: 100%; /* Ensure images take full width */
+  }
+
+  .parentdiv {
+    margin: 5%;
+  }
+
+  .page3div .backgrounddiv,
+  .page3div .linepage3 {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+
+  .page3div .aboutdiv {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .page4 .formpa,
+  .page4 .contact {
+    flex-direction: column; /* Stack form and contact info vertically */
+    width: 100%;
+ 
+  }

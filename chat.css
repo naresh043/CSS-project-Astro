@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+
+}
+
+.page1div, .page2div, .page3div, .page4 {
+    background-image: url(./tm-astro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 98.5vw;
+    height:99vh;
+}
+
+/* Page 1 */
+.page1div .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    /* padding: 2% 6%; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlink {
+    flex: 1;
+    text-align: right;
+
+}
+
+.navlink ul {
+    list-style: none;
+}
+
+.navlink ul li {
+    display: inline-block;
+    padding: 8px;
+    /* position: relative; */
+}
+
+.navlink ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navlink ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition-duration: 0.5s;
+}
+
+.navlink ul li:hover::after {
+    width: 100%;
+}
+.hamburger{
+    list-style: none;
+    display: none;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+.Welcome {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+    transition: all 1s;
+    animation: Welcome 3s 1;
+}
+
+/* @keyframes Welcome {
+    from {
+        width: 0%;
+        background-color: white;
+    }
+    to {
+        width: 100%;
+        background-color: black;
+    }
+} */
+
+/* .Welcome:hover {
+    box-shadow: 5px 5px 10px white;
+    transform: scale(1.1);
+} */
+
+.imgdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.imga {
+    border-radius: 5px;
+    transition: all 1s;
+    animation: imga 3s 1;
+}
+
+/* @keyframes imga {
+    from {
+        width: 0%;
+        background-color: white;
+    }
+    to {
+        width: 100%;
+        background-color: black;
+    }
+} */
+
+/* .imgdiv img:hover {
+    box-shadow: 5px 5px 10px white;
+    transform: scale(1.1);
+} */
+
+.maindivhome {
+    display: flex;
+    gap: 10px;
+
+}
+
+.linediv {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    animation: linediv 3s 1;
+
+}
+button{
+    /* transform: translateX(250%); */
+    width: 10%;
+    padding: 0.5%;
+    border-radius: 0.5rem;
+}
+button a{
+    font-size: 1.02rem;
+    text-decoration: none;
+}
+
+/* @keyframes linediv {
+    from {
+        width: 0%;
+        background-color: black;
+    }
+    to {
+        width: 100%;
+        background-color: white;
+    }
+} */
+
+.parentdiv {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.8%;
+    height: 80vh;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+
+/* Page 2 */
+/* .page2div .mparent {
+    display: flex;
+    justify-content: center;
+} */
+
+.page2div .imgprent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+    width:99.5%;
+    max-width: 1400px;
+    height: 99vh;
+}
+
+
+.page2div img{
+width: 180px;
+height: 350px;
+padding: 10px;
+object-fit: cover;
+}
+
+.page2div .child2 img {
+    width: 97%;
+    height: 100%;
+
+}
+
+.page2div .child2a {
+    animation: move 3s infinite;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2b {
+    animation: move 3s infinite;
+    animation-delay: 0.1s;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2c {
+    animation: move 3s infinite;
+    animation-delay: 0.2s;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2d {
+    animation: move 3s infinite;
+    animation-delay: 0.4s;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2e {
+    animation: move 3s infinite;
+    animation-delay: 0.5s;
+    transition: all 0.3s ease;
+}
+
+.page2div .child2f {
+    animation: move 3s infinite;
+    animation-delay: 0.6s;
+    transition: all 0.3s ease;
+}
+
+/* @keyframes move {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} */
+
+/* Page 3 */
+.page3div .backgrounddiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    height: 90vh;
+    width: 95vw;
+    animation: animi 3s 1;
+    transition: all 3s;
+}
+
+.page3div .linepage3 {
+    width: 56%;
+    height: 4px;
+    background-color: white;
+    animation: animi 3s 1;
+    transition: all 3s;
+}
+
+/* @keyframes animi {
+    from {
+        opacity: 0.3;
+        transform: scale(3, 3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+} */
+
+.page3div .aboutdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.315);
+    border-radius: 5px;
+    color: white;
+    height: 50vh;
+    width: 50vw;
+    padding: 20px;
+}
+
+.page3div .aboutdiv:hover {
+    box-shadow: 3px 3px 10px white;
+}
+
+/* Page 4 */
+.formpa  {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    height: 95vh;
+    width: 97vw;
+}
+
+.formpa, .page4{
+    height: fit-content;
+}
+.page4 .contact {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.322);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    width: 40vw;
+    padding: 20px;
+   
+    
+
+}
+iframe{
+    width: 100%;
+    height: 50%;
+}
+.page4 .el2a {
+    font-size: 25px;
+    color: white;
+}
+
+.page4 .el2b {
+    color: white;
+}
+
+.page4 .inputname, 
+.page4 .msg, 
+.page4 .buttonsub {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+}
+
+.page4 .inputname {
+    border-bottom-width: 3px;
+    border-radius: 30px;
+}
+
+.page4 .buttonsub {
+    width: auto;
+    cursor: pointer;
+    background-color: rgba(255, 192, 203, 0.205);
+    border: 0;
+    font-size: 18px;
+    color: white;
+}
+.buttonsub:hover{
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.page4 .msg {
+    border-radius: 10px;
+}
+
+.page4 input::placeholder, 
+.page4 textarea::placeholder {
+    color: white;
+    font-style: italic;
+}
+
+.page4 .formdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3px;
+    width: 30%;
+    height:70vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.formpa{
+    height: fit-content;
+}
+
+@media screen and (max-width:1400px){
+    /* page 1 */
+    .page1div{
+        width: 98.5vw;
+        height:99vh;
+    }
+    .header{
+        height: 40px;
+        width: 99px;
+    }
+    .parentdiv{
+        height: 90vh;
+        transform: translateX(5%);
+    }
+    .Welcome *{
+       font-size: 130%;
+    }
+    button{
+        transform: translateX(400%);
+    }
+    .navlink{
+        padding-right: 10px;
+    }
+    .logo{
+        padding-left: 2%;
+    }
+    /* page 2 */
+    .page2div{
+        width: 98.5vw;
+        height:99vh;
+    }
+    .page2div img{
+        width: 175px;
+    }
+    /* page-3 */
+    .page3div{
+        width: 98.5vw;
+        height:99vh;
+    }
+    .aboutdiv *{
+        font-size:130%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    /* page 2 */
+    .page2div img{
+        width: 290px;
+        height: 290px;
+        object-position: top;
+        }
+}
+@media screen and (max-width:1150px){
+    /* page 2 */
+    .page2div img{
+        width: 260px;
+        height: 270px;
+        }
+}
+@media screen and (max-width:1080px){
+     /* page 2 */
+     .page2div img{
+        width: 290px;
+        height: 250px;
+        }
+}
+@media screen and (max-width:992px){
+    /* page 2 */
+    .page2div img{
+        width: 230px;
+        height: 200px;
+        }
+}
+@media screen and (max-width:768px){
+   /* page 1 */
+   button{
+    transform: translateX(450%);
+   } button a{
+        font-size:10px;
+    } 
+    .parentdiv{
+        width:90vw;
+    }
+    .Welcome *{
+        font-size: 100%;
+    }
+    .imga{
+        width:180px;
+        height: 150px;
+        object-fit: cover;
+    }
+    /* page 2 */
+    .page2div img{
+        width: 230px;
+        height: 150px;
+        padding: 5px;
+
+    }
+    .aboutdiv *{
+        font-size:100%;
+    }
+    /* page 4 */
+    .page4 .formpa  {
+        display: block;
+    }
+    .page4 .formdiv {
+        width: 98%;
+    }
+    .page4 .contact {
+        width: 83%;
+        
+    }
+
+}
+@media screen and (max-width:576px){
+     /* page 2 */
+     .page2div img{
+        width: 200px;
+        height: 150px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:480px){
+    /* page 1 */
+    .navlink{
+       display: none; 
+    }
+    .hamburger{
+        display: block;
+        padding-right: 10px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .maindivhome {
+        display: block;
+    }
+    .imgdiv{
+        flex-direction: row;
+        margin-top: 1%;
+        gap: 3px;
+    }
+    .imga{
+        width:170px;
+    }
+     /* page 2 */
+     .page2div img{
+        width: 160px;
+        height: 130px;
+      
+    }
+    .aboutdiv *{
+        font-size:90%;
+    }
+}
+@media screen and (max-width:399px) {
+    /* page 1 */
+    .imgdiv{
+
+    }
+    .imga{
+       width: 150px; 
+    }
+    button{
+      width: 50px;
+      transform: translateX(300%);
+    }
+}
+
+@media screen and (max-width:360px){
+    /* page 1 */
+    .imga{
+        width: 130px; 
+        height: 130px;
+     }
+    button{
+        transform: translateX(250%);  
+    }
+    .imgdiv{
+        overflow: hidden;
+    }
+     /* page 2 */
+     .page2div img{
+        width: 140px;
+        height: 160px;
+      
+    }
+    .aboutdiv *{
+        font-size:80%;
+    }
+
+}
