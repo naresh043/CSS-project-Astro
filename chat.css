@@ -568,24 +568,29 @@ iframe {
   /* page 1 */
   .parentdiv {
     justify-content: center;
+    margin-top: 20%;
     gap: 10px;
+    border: 2px solid red ;
+
   }
-  .Welcome {
+  /* .Welcome {
     height: 40vh;
-  }
+  } */
   .Welcome * {
     color: white;
-    font-size: 17px;
+    font-size: 16px;
   }
   .maindivhome {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border: 2px solid red ;
+
   }
 
   .imga {
-    width: 150px;
-    height: 200px;
+    width: 140px;
+    height: 180px;
   }
   button {
     transform: translateX(100%);
@@ -598,7 +603,9 @@ iframe {
   /* page 2 */
   .page2div img {
     width: 140px;
-    height: 250px;
+    height: 175px;
+    border: 2px solid red ;
+
   }
   .aboutdiv * {
     font-size: 80%;
@@ -607,16 +614,19 @@ iframe {
   .page3div .backgrounddiv {
     height: 70vh;
     transform: translateY(20%);
+    border: 2px solid red ;
+
   }
   .page3div .aboutdiv {
     width: 80vw;
-    height: 60vh;
+    height: 50vh;
   }
   .aboutdiv * {
-    font-size: 18px;
+    font-size: 16px;
   }
   .page3div .linepage3 {
     width: 90vw;
+    border: 2px solid red ;
   }
   /* page 4 */
   .page4 .contact {
