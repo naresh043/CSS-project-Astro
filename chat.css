@@ -88,6 +88,7 @@ nav {
 
 .Welcome {
   padding: 3%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -109,15 +110,7 @@ nav {
 
 .Welcome:hover {
   box-shadow: 5px 5px 10px white;
-  transform: scale(1.1);
 }
-
-/* .imgdiv {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-around;
-} */
 
 .imga {
   border-radius: 5px;
@@ -128,18 +121,19 @@ nav {
 @keyframes imga {
   from {
     width: 0%;
-    background-color: white;
   }
   to {
     width: 49%;
-    background-color: black;
   }
 }
 
-/* .imgdiv img:hover {
-    box-shadow: 5px 5px 10px white;
-    transform: scale(1.1);
-} */
+.imgdiv{
+  animation: imga 3s 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3PX;
+
+}
 
 .maindivhome {
   display: flex;
@@ -158,12 +152,18 @@ button {
   padding: 0.5%;
   border-radius: 0.5rem;
 }
+button:hover{
+  background: rgba(0, 0, 0, 0.651);
+}
 button a {
   font-size: 1.02rem;
   text-decoration: none;
 }
+button a:hover{
+  color: white;
+}
 
-/* @keyframes linediv {
+@keyframes linediv {
     from {
         width: 0%;
         background-color: black;
@@ -172,7 +172,7 @@ button a {
         width: 100%;
         background-color: white;
     }
-} */
+}
 
 .parentdiv {
   display: flex;
@@ -247,7 +247,7 @@ button a {
   transition: all 0.3s ease;
 }
 
-/* @keyframes move {
+@keyframes move {
     0% {
         opacity: 0;
         transform: translateY(100px);
@@ -256,7 +256,7 @@ button a {
         opacity: 1;
         transform: translateY(0px);
     }
-} */
+}
 
 /* Page 3 */
 .page3div .backgrounddiv {
@@ -316,8 +316,7 @@ button a {
   width: 97vw;
 }
 
-.formpa,
-.page4 {
+.formpa,.page4 {
   height: fit-content;
 }
 .page4 .contact {
@@ -329,6 +328,9 @@ button a {
   height: 80vh;
   width: 40vw;
   padding: 20px;
+}
+.page4 .contact:hover{
+  box-shadow: 3px 3px 10px 2px white;
 }
 iframe {
   width: 100%;
@@ -569,22 +571,19 @@ iframe {
   .parentdiv {
     justify-content: center;
     margin-top: 20%;
-    gap: 10px;
-    border: 2px solid red ;
+    gap: 10px;s
 
   }
   /* .Welcome {
     height: 40vh;
   } */
   .Welcome * {
-    color: white;
     font-size: 16px;
   }
   .maindivhome {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 2px solid red ;
 
   }
 
@@ -604,7 +603,7 @@ iframe {
   .page2div img {
     width: 140px;
     height: 175px;
-    border: 2px solid red ;
+
 
   }
   .aboutdiv * {
@@ -614,7 +613,6 @@ iframe {
   .page3div .backgrounddiv {
     height: 70vh;
     transform: translateY(20%);
-    border: 2px solid red ;
 
   }
   .page3div .aboutdiv {
@@ -626,7 +624,6 @@ iframe {
   }
   .page3div .linepage3 {
     width: 90vw;
-    border: 2px solid red ;
   }
   /* page 4 */
   .page4 .contact {
